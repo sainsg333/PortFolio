@@ -21,7 +21,7 @@ const projects = [
       { name: 'SocketIO' },
     ],
     image: '/assets/work/1.png',
-    live: "https://example.com",
+    live: "",
     github: "https://github.com/sainsg333/chat_app_mern",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       { name: 'Android Studio' },
     ],
     image: '/assets/work/2.png',
-    live: "https://example.com",
+    live: "",
     github: "https://github.com/sainsg333/climate",
   },
   {
@@ -49,7 +49,7 @@ const projects = [
       { name: 'Javascript' },
     ],
     image: '/assets/work/3.jpg',
-    live: "https://example.com",
+    live: "",
     github: "https://github.com/sainsg333/Calsy",
   },
   {
@@ -63,7 +63,7 @@ const projects = [
       { name: 'YOLO V8' },
     ],
     image: '/assets/work/4.jpg',
-    live: "https://example.com",
+    live: "",
     github: "https://github.com/sainsg333/Deep_learning_visually_impaired",
   },
 ];
