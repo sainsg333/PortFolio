@@ -102,7 +102,7 @@ const education={
     },
     {
       title:"Secondary School",
-      degree:"Board of secondary education AP",
+      degree:"Board of secondary education",
       university:"Sri Chaintya E.M School",
       duration:"2015-2019",
     }
