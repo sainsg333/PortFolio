@@ -90,7 +90,7 @@ const education={
     },
     {
       title:"Bachelor of Technology",
-      degree:"Computer Science",
+      degree:"Information Technology",
       university:"GMR Institue of Technology",
       duration:"2021-2025",
     },
