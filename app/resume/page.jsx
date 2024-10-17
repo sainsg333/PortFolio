@@ -45,7 +45,7 @@ const about={
 const experience={
   icon:'/assets/resume/badge.svg',
   title:"My experience",
-  Description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  Description:"I had over 2 years of experience in full-stack development, specializing in Python (Django, Flask), the MERN stack, and machine learning. I am skilled in building efficient applications and have worked on various projects, including intelligent systems and web applications.",
   items:[
     {
       title:"Software Developer",
@@ -68,7 +68,7 @@ const experience={
 const education={
   icon:'/assets/resume/cap.svg',
   title:"My Education",
-  Description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  Description:"I am currently pursuing a BTech degree in Information Technology at GMR Institute of Technology (GMRIT), gaining expertise in software development, AI, and data science.",
   items:[
     {
       title:"Full Stack Web Developement",
@@ -111,7 +111,7 @@ const education={
 
 const skills={
   title:"My Skills",
-  Description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  Description:"I am skilled in full-stack development using the MERN stack, Python (Django, Flask), PHP, and CSS. Additionally, I have expertise in machine learning, AI, data science, and Android development using Kotlin.",
   skillList:[
     {
       icon:<FaHtml5/>,
@@ -231,7 +231,8 @@ const Resume = () => {
                           <TooltipTrigger className="w-full h-[130px] bg-[#232329] rounded-xl flex justify-center items-center group">
                             <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                           </TooltipTrigger>
-                          <TooltipContent>
+                          <TooltipContent className="capitalize hidden md:block xl:text-xl"
+                          >
                             <p className="capitalize">{skill.name}</p>
                           </TooltipContent>
                         </Tooltip>

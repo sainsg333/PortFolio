@@ -2,33 +2,33 @@
 import {BsArrowUpRight} from "react-icons/bs";
 import Link from "next/link";
 
-
 const services =[
   {
-    num:'01',
-    title:'Web Development',
-    href:'#',
-    description:'Lorem ipsum dolor sit amet, ut faucibus libero.'
+    num: '01',
+    title: 'Web Development',
+    href: '../work',
+    description: 'Building responsive and scalable websites using the latest web technologies like HTML, CSS, JavaScript, and frameworks like React'
   },
   {
-    num:'02',
-    title:'App Development',
-    href:'#',
-    description:'Lorem ipsum dolor sit amet, ut faucibus libero.'
+    num: '02',
+    title: 'App Development',
+    href: '../work',
+    description: 'Creating mobile applications that provide seamless user experiences, leveraging platforms such as Android, iOS, and cross-platform tools like flutter and kotlin'
   },
   {
-    num:'03',
-    title:'Machine Learning',
-    href:'#',
-    description:'Lorem ipsum dolor sit amet, ut faucibus libero.'
+    num: '03',
+    title: 'Machine Learning',
+    href: '../work',
+    description: 'Developing intelligent systems that analyze data, make predictions, and automate decision-making using state-of-the-art machine learning algorithms and tools.'
   },
   {
-    num:'04',
-    title:'Cloud Management',
-    href:'#',
-    description:'Lorem ipsum dolor sit amet, ut faucibus libero.'
-  },
-]
+    num: '04',
+    title: 'Python Development',
+    href: '#',
+    description: 'Building robust, scalable web applications with Django, leveraging Python’s simplicity and Django’s powerful framework to deliver secure, high-performance solutions.'
+  }
+];
+
 import {motion} from 'framer-motion';
 import { Heading } from "lucide-react";
 

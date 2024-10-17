@@ -14,8 +14,8 @@ const Photo = () => {
                 priority
                 quality={100}
                 fill
-                alt=""
-                className="relative object-contain" />
+                alt="not working"
+                className="relative object-contain"/>
             </div>
             </motion.div>
         <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
@@ -26,9 +26,9 @@ const Photo = () => {
           <motion.circle 
           cx="253" 
           cy="253" 
-          r="250" 
+          r="241" 
           stroke="#FF204E" 
-          strokewidth = "4" 
+          strokeWidth = "4" 
           strokeLinecap="round"
           stokeLinejoin="round"
           initial={{strokeDasharray:"24 10 0 0"}}
@@ -43,7 +43,6 @@ const Photo = () => {
           }}
           />
         </motion.svg>
-
         </motion.div>
     </div>
   )

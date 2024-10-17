@@ -15,7 +15,7 @@ const projects = [
     num:'01',
     category:'Full Stack',
     title:'Project 1',
-    Description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    Description:"Built a real-time chat app using the MERN stack and Socket.io. The backend manages user authentication and message storage, while the React frontend handles the chat interface. Socket.io enables real-time messaging between users.",
     stack:[
       {name:'ReactJs'},
       {name:'NodeJs'},
@@ -23,51 +23,51 @@ const projects = [
       {name:'MondgoDB'},
       {name:'SocketIO'},
     ],
-    image:'/assets/work/thumb1.png',
+    image:'/assets/work/1.png',
     live:"",
-    github:"",
+    github:"https://github.com/sainsg333/chat_app_mern",
   },
   {
     num:'02',
     category:'Android',
     title:'Project 2',
-    Description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    Description:"The weather app you developed is an Android application built using Kotlin that provides real-time weather information by fetching data from a weather API. The app likely includes features like current weather conditions, forecasts, and location-based weather updates, making it user-friendly and efficient for users to check the weather on the go.",
     stack:[
       {name:'Xml'},
       {name:'Kotlin'},
       {name:'Android Studio'},
     ],
-    image:'/assets/work/thumb2.png',
+    image:'/assets/work/2.png',
     live:"",
-    github:"",
+    github:"https://github.com/sainsg333/climate",
   },
   {
     num:'03',
     category:'frontend',
     title:'Project 3',
-    Description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    Description:"The calculator is a simple web application built using JavaScript, HTML, and CSS. It provides basic arithmetic operations, allowing users to perform addition, subtraction, multiplication, and division. The design is responsive and visually appealing, enhancing the overall user experience.",
     stack:[
       {name:'Html 5'},
       {name:'Css 3'},
       {name:'Javascript'},
     ],
-    image:'/assets/work/thumb3.png',
+    image:'/assets/work/3.jpg',
     live:"",
-    github:"",
+    github:"https://github.com/sainsg333/Calsy",
   },
   {
     num:'04',
     category:'Deep Learning',
     title:'Project 4',
-    Description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    Description:"I developed a machine learning application titled An intelligent navigation and object detection system for the visually impaired. This system uses real-time image processing and AI to identify objects and provide navigation assistance, enhancing the mobility and independence of visually impaired users.",
     stack:[
       {name:'Machine learning'},
       {name:'Deep learning'},
       {name:'YOLO V8'},
     ],
-    image:'/assets/work/thumb1.png',
+    image:'/assets/work/4.jpg',
     live:"",
-    github:"",
+    github:"https://github.com/sainsg333/Deep_learning_visually_impaired",
   },
 ]
 
@@ -78,23 +78,24 @@ const Work = () => {
     setProject(projects[currentIndex]);
   }
   return <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{delay:2.4,duration:0.4,ease:"easeIn"}}}
-  className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
+  className="min-h-[60vh] flex flex-col justify-center py-12 xl:px-0">
     <div className="container mx-auto">
       <div className="flex flex-col xl:flex-row xl:gap-[30px]">
         <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-          <div className="flex flex-col gap-[30px] h-[50%]">
+          <div className="flex flex-col gap-[30px] ">
             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
               {project.category} project</h2>
             <p className="text-white/60">{project.Description}</p>
-            <ul className="flex gap-4">
-              {project.stack.map((item,index)=>{
-                return <li className="text-xl text-accent" key={index}>
-                  {item.name}
-                  {index!==project.stack.length-1 && ","}
-                  </li>
-              })}
-            </ul>
+            <ul className="grid grid-cols-2 gap-4 md:flex xl:flex">
+  {project.stack.map((item, index) => (
+    <li key={index} className="text-xl text-accent">
+      {item.name}
+      {index !==project.stack.length - 1 && ","}
+    </li>
+  ))}
+</ul>
+
             <div className="border border-white/20"></div>
             <div className="flex gap-4">
               <Link href={project.live}>
