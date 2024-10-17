@@ -10,7 +10,11 @@ const Header = () => {
             {/* {logo} */}
             <Link href="/">
             <h1 className="text-4xl font-semibold">
+<<<<<<< HEAD
                 Sai Nsg <span className="text-accent" >🦄</span>
+=======
+                Sai Nsg <span className="text-accent" ></span>
+>>>>>>> 2a93a6bcb59e7bedf3342025433ae3ef286cc9fa
             </h1>
             </Link>
             {/* {desktop nav & hire me button} */}
