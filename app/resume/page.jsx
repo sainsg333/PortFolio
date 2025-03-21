@@ -45,8 +45,18 @@ const about={
 const experience={
   icon:'/assets/resume/badge.svg',
   title:"My experience",
-  Description:"I had over 2 years of experience in full-stack development, specializing in Python (Django, Flask), the MERN stack, and machine learning. I am skilled in building efficient applications and have worked on various projects, including intelligent systems and web applications.",
+  Description:"I had over 3 years of experience in full-stack development, specialization in Python(Django, Flask) and also a 2 year experience in MERN stack(NEXT JS), machine learning, deep learning and Computer vision. I am skilled in building efficient applications and have worked on various projects, including intelligent systems and web applications.",
   items:[
+        {
+      title:"Computer Vision Engineer",
+      company:"IIT Roorkee",
+      duration:"January 2025",
+    },
+   {
+      title:"ML Developer",
+      company:"Andhra University",
+      duration:"july 2024",
+    },
     {
       title:"Software Developer",
       company:"CEMS",
@@ -56,11 +66,6 @@ const experience={
       title:"App Developement",
       company:"AICTE",
       duration:"august 2023",
-    },
-    {
-      title:"ML Developer",
-      company:"Andhra University",
-      duration:"july 2024",
     }
   ]
 }
