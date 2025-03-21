@@ -8,7 +8,7 @@ import { SiTailwindcss,SiNextdotjs } from "react-icons/si";
 
 const about={
   title:"About me",
-  Description:"I am a BTech IT student at GMRIT, skilled in Python (Django, Flask), Machine Learning, PHP, CSS, and MERN stack. I am passionate about Full Stack development, AI, and data science, aiming to contribute to IT innovations.",
+  Description:"I’m a dynamic BTech IT student at GMRIT, wielding expertise in Python (Django, Flask), Machine Learning, PHP, CSS, and the MERN stack. With a fervor for Full Stack development, AI, and data science, I’m driven to architect cutting-edge solutions and push the boundaries of IT innovation.",
   info:[
     {
       fieldName:"Name",
@@ -19,7 +19,7 @@ const about={
       fieldValue:"+91 9640164778"
   },{
       fieldName:"Experience",
-      fieldValue:"2+ years"
+      fieldValue:"3+ years"
     },{
       fieldName:"LinkedIn",
       fieldValue:"nagireddysaigowtham"
@@ -37,7 +37,7 @@ const about={
     },
     {
       fieldName:"Languages",
-      fieldValue:"English, Telugu"
+      fieldValue:"English, Telugu, Hindi"
     },
   ]
 }
@@ -114,41 +114,23 @@ const education={
   ]
 }
 
-const skills={
-  title:"My Skills",
-  Description:"I am skilled in full-stack development using the MERN stack, Python (Django, Flask), PHP, and CSS. Additionally, I have expertise in machine learning, AI, data science, and Android development using Kotlin.",
-  skillList:[
-    {
-      icon:<FaHtml5/>,
-      name:"html 5",
-    },
-    {
-      icon:<FaCss3/>,
-      name:"css 3",
-    },
-    {
-      icon:<FaJs/>,
-      name:"javascript",
-    },
-    {
-      icon:<FaReact/>,
-      name:"React.Js",
-    },
-    {
-      icon:<SiNextdotjs/>,
-      name:"next.Js",
-    },
-    {
-      icon:<SiTailwindcss/>,
-      name:"Tailwind.css",
-    },
-    {
-      icon:<FaNodeJs/>,
-      name:"Node.js",
-    },
-
-  ]
-}
+const skills = {
+  title: "My Skills",
+  Description: "I am skilled in full-stack development using the MERN stack, Python (Django, Flask), PHP, and CSS. Additionally, I have expertise in machine learning, deep learning, computer vision, AI, data science, and mobile app development with React Native and Android using Kotlin.",
+  skillList: [
+    { icon: <FaHtml5 />, name: "html 5" },
+    { icon: <FaCss3 />, name: "css 3" },
+    { icon: <FaJs />, name: "javascript" },
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <SiNextdotjs />, name: "next.js" },
+    { icon: <SiTailwindcss />, name: "Tailwind.css" },
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <FaBrain />, name: "Machine Learning" },
+    { icon: <FaBrain />, name: "Deep Learning" },
+    { icon: <FaEye />, name: "Computer Vision" },
+    { icon: <FaMobileAlt />, name: "React Native" },
+  ],
+};
 
 import {Tabs,TabsContent,TabsList,TabsTrigger} from '@/components/ui/tabs';
 import {
@@ -221,35 +203,35 @@ const Resume = () => {
               </ScrollArea>
             </div>
           </TabsContent>
-          <TabsContent value="skills" >
-            <div className="flex flex-col gap-[30px]">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.Description}</p>
-              </div>
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                {skills.skillList.map((skill,index)=>{
-                  return(
-                    <li key={index} className="flex items-center gap-3">
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[130px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}<p className="capitalize text-sm text-accent md:hidden xl:hidden">{skill.name}</p></div>
-                          </TooltipTrigger>
-                          <TooltipContent className="capitalize hidden md:block xl:text-xl"
-                          >
-                            <p className="capitalize">{skill.name}</p>
-                          </TooltipContent>
-                        
-
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          </TabsContent>
+         <TabsContent value="skills">
+  <div className="flex flex-col gap-[30px]">
+    <div className="flex flex-col gap-[30px] text-center xl:text-left">
+      <h3 className="text-4xl font-bold">{skills.title}</h3>
+      <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.Description}</p>
+    </div>
+    <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 xl:gap-[30px]">
+      {skills.skillList.map((skill, index) => {
+        return (
+          <li key={index} className="flex items-center gap-3">
+            <TooltipProvider delayDuration={100}>
+              <Tooltip>
+                <TooltipTrigger className="w-full h-[130px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                  <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                    {skill.icon}
+                    <p className="capitalize text-sm text-accent md:hidden xl:hidden">{skill.name}</p>
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent className="capitalize hidden md:block xl:text-xl">
+                  <p className="capitalize">{skill.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</TabsContent>
           <TabsContent value="about" className="w-full text-center xl:text-left">
             <div className="flex flex-col gap-[30px]">
               <h3 className="text-4xl font-bold">{about.title}</h3>
