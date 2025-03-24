@@ -11,15 +11,16 @@ const services =[
   },
   {
     num: '02',
-    title: 'App Development',
+    title: 'AI Building',
     href: '../work',
-    description: 'Creating mobile applications that provide seamless user experiences, leveraging platforms such as Android, iOS, and cross-platform tools like flutter and kotlin'
+    description: 'Developing intelligent systems that analyze data, make predictions, and automate decision-making using state-of-the-art machine learning and deep learning algorithms and tools.'
+
   },
   {
     num: '03',
-    title: 'Machine Learning',
+    title: 'App Development',
     href: '../work',
-    description: 'Developing intelligent systems that analyze data, make predictions, and automate decision-making using state-of-the-art machine learning algorithms and tools.'
+    description: 'Creating mobile applications that provide seamless user experiences, leveraging platforms such as Android, iOS, and cross-platform tools like flutter and kotlin'
   },
   {
     num: '04',

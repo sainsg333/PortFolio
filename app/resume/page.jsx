@@ -3,12 +3,12 @@
 import { Description } from "@radix-ui/react-dialog";
 import { Instrument_Sans } from "next/font/google";
 import { FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss,SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiScikitlearn,SiTensorflow, SiOpencv, SiTableau } from "react-icons/si";
 
 
 const about={
   title:"About me",
-  Description:"I am a BTech IT student at GMRIT, skilled in Python (Django, Flask), Machine Learning, PHP, CSS, and MERN stack. I am passionate about Full Stack development, AI, and data science, aiming to contribute to IT innovations.",
+  Description:"I'm a B.Tech IT student at GMRIT with skills in Python (Django, Flask), Machine Learning, CSS, React Native, Next.js, and the MERN stack. I love building full-stack applications and exploring the power of AI and data science, always aiming to turn creative ideas into impactful tech solutions.",
   info:[
     {
       fieldName:"Name",
@@ -19,7 +19,7 @@ const about={
       fieldValue:"+91 9640164778"
   },{
       fieldName:"Experience",
-      fieldValue:"2+ years"
+      fieldValue:"3+ years"
     },{
       fieldName:"LinkedIn",
       fieldValue:"nagireddysaigowtham"
@@ -32,10 +32,6 @@ const about={
       fieldValue:"sainsg333@gmail.com"
     },
     {
-      fieldName:"Freelance",
-      fieldValue:"Available"
-    },
-    {
       fieldName:"Languages",
       fieldValue:"English, Telugu"
     },
@@ -45,8 +41,18 @@ const about={
 const experience={
   icon:'/assets/resume/badge.svg',
   title:"My experience",
-  Description:"I had over 2 years of experience in full-stack development, specializing in Python (Django, Flask), the MERN stack, and machine learning. I am skilled in building efficient applications and have worked on various projects, including intelligent systems and web applications.",
+  Description:"I had over 3 years of experience in full-stack development, specialization in Python(Django, Flask) and also a 2 year experience in MERN stack(NEXT JS), machine learning, deep learning and Computer vision. I am skilled in building efficient applications and have worked on various projects, including intelligent systems and web applications.",
   items:[
+    {
+      title:"Computer Vision Engineer",
+      company:"IIT Roorkee",
+      duration:"January 2025",
+    },
+    {
+      title:"ML Developer",
+      company:"Andhra University",
+      duration:"july 2024",
+    },
     {
       title:"Software Developer",
       company:"CEMS",
@@ -56,11 +62,6 @@ const experience={
       title:"App Developement",
       company:"AICTE",
       duration:"august 2023",
-    },
-    {
-      title:"ML Developer",
-      company:"Andhra University",
-      duration:"july 2024",
     }
   ]
 }
@@ -109,41 +110,62 @@ const education={
   ]
 }
 
-const skills={
-  title:"My Skills",
-  Description:"I am skilled in full-stack development using the MERN stack, Python (Django, Flask), PHP, and CSS. Additionally, I have expertise in machine learning, AI, data science, and Android development using Kotlin.",
-  skillList:[
+const skills = {
+  title: "My Skills",
+  Description:
+    "I am skilled in full-stack development using the MERN stack, Next.js, React Native, Python (Django, Flask), and CSS. My core strength lies in the domain of Artificial Intelligence, with expertise in machine learning, deep learning, computer vision, and data science. I’m passionate about building intelligent, scalable applications that bridge AI with real-world solutions.",
+  skillList: [
     {
-      icon:<FaHtml5/>,
-      name:"html 5",
+      icon: <FaHtml5 />,
+      name: "HTML 5",
     },
     {
-      icon:<FaCss3/>,
-      name:"css 3",
+      icon: <FaCss3 />,
+      name: "CSS 3",
     },
     {
-      icon:<FaJs/>,
-      name:"javascript",
+      icon: <FaJs />,
+      name: "JavaScript",
     },
     {
-      icon:<FaReact/>,
-      name:"React.Js",
+      icon: <FaReact />,
+      name: "React.js",
     },
     {
-      icon:<SiNextdotjs/>,
-      name:"next.Js",
+      icon: <SiNextdotjs />,
+      name: "Next.js",
     },
     {
-      icon:<SiTailwindcss/>,
-      name:"Tailwind.css",
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
     },
     {
-      icon:<FaNodeJs/>,
-      name:"Node.js",
+      icon: <FaNodeJs />,
+      name: "Node.js",
     },
+    {
+      icon: <SiTensorflow />,
+      name: "Deep Learning",
+    },
+    {
+      icon: <SiOpencv />,
+      name: "Computer Vision",
+    },
+    {
+      icon: <FaReact />,
+      name: "React Native",
+    },
+    {
+      icon: <SiTableau />,
+      name: "Data Analytics",
+    },
+    {
+      icon: <SiScikitlearn />,
+      name: "Machine Learning",
+    },
+  ],
+};
 
-  ]
-}
 
 import {Tabs,TabsContent,TabsList,TabsTrigger} from '@/components/ui/tabs';
 import {
@@ -217,7 +239,7 @@ const Resume = () => {
             </div>
           </TabsContent>
           <TabsContent value="skills" >
-            <div className="flex flex-col gap-[30px]">
+            <div className="flex flex-col gap-[30px] mt-0">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{skills.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.Description}</p>
@@ -235,8 +257,6 @@ const Resume = () => {
                           >
                             <p className="capitalize">{skill.name}</p>
                           </TooltipContent>
-                        
-
                         </Tooltip>
                       </TooltipProvider>
                     </li>
