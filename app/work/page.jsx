@@ -198,6 +198,7 @@ const Work = () => {
                 {project.category} project
               </h2>
               <p className="text-white/60">{project.Description}</p>
+                            <p>Click on me</p>
               <div className="border border-white/20"></div>
               <ul className="flex flex-wrap gap-4  md:flex xl:flex">
                 {project.stack.map((item, index) => (
