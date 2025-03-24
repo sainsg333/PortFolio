@@ -63,7 +63,7 @@ const projects = [
         advancements: ["Real-time messaging", "User authentication", "Socket.io integration"],
       },
       {
-        date: "Apr 2025",
+        date: "Mar 2025",
         icon: BeakerIcon,
         iconBg: "#9C27B0",
         phaseTitle: "Testing Phase",
@@ -71,7 +71,7 @@ const projects = [
         advancements: ["Bug fixes", "Performance optimization", "Cross-browser testing"],
       },
       {
-        date: "May 2025",
+        date: "Mar 2025",
         icon: RocketLaunchIcon,
         iconBg: "#4CAF50",
         phaseTitle: "Deployment",
