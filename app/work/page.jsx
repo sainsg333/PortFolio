@@ -198,7 +198,10 @@ const Work = () => {
                 {project.category} project
               </h2>
               <p className="text-white/60">{project.Description}</p>
-                            <p>Click on me</p>
+                           <p className="text-blue-500 hover:text-blue-700 transition-colors duration-300 hover:shadow-md hover:shadow-blue-400/40 rounded-xl">
+  Click Here👇
+</p>
+
               <div className="border border-white/20"></div>
               <ul className="flex flex-wrap gap-4  md:flex xl:flex">
                 {project.stack.map((item, index) => (
